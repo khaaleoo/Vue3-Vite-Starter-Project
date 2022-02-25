@@ -1,5 +1,5 @@
 {
-  "name": "vue3-vite-starter",
+  "name": "click-ver2-fe",
   "author": "Kha Leo",
   "private": true,
   "version": "0.0.0",
@@ -20,14 +20,26 @@
     "*.{ts,vue}": "eslint --fix"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@headlessui/vue": "^1.5.0",
+    "@heroicons/vue": "^1.0.5",
+    "ant-design-vue": "^3.0.0-alpha.16",
+    "axios": "^0.26.0",
+    "cookie-storage": "^6.1.0",
+    "cookies": "^0.8.0",
+    "mini-dynamic-antd-theme": "^0.5.5",
+    "uni": "^0.0.6",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
+    "@types/cookies": "^0.7.7",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/compiler-sfc": "^3.2.31",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
     "autoprefixer": "^10.4.2",

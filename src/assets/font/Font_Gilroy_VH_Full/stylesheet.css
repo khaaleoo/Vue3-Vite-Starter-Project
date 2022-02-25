@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyBlack.woff2') format('woff2'),
+        url('SVN-GilroyBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyHeavy.woff2') format('woff2'),
+        url('SVN-GilroyHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyBlackItalic.woff2') format('woff2'),
+        url('SVN-GilroyBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyHeavyItalic.woff2') format('woff2'),
+        url('SVN-GilroyHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyBold.woff2') format('woff2'),
+        url('SVN-GilroyBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyBoldItalic.woff2') format('woff2'),
+        url('SVN-GilroyBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyLight.woff2') format('woff2'),
+        url('SVN-GilroyLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyItalic.woff2') format('woff2'),
+        url('SVN-GilroyItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyLightItalic.woff2') format('woff2'),
+        url('SVN-GilroyLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-Gilroy.woff2') format('woff2'),
+        url('SVN-Gilroy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyMediumItalic.woff2') format('woff2'),
+        url('SVN-GilroyMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyMedium.woff2') format('woff2'),
+        url('SVN-GilroyMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroySemiBold.woff2') format('woff2'),
+        url('SVN-GilroySemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyThinItalic.woff2') format('woff2'),
+        url('SVN-GilroyThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroySemiBoldItalic.woff2') format('woff2'),
+        url('SVN-GilroySemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyThin.woff2') format('woff2'),
+        url('SVN-GilroyThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XLight';
+    src: url('SVN-GilroyXLightItalic.woff2') format('woff2'),
+        url('SVN-GilroyXLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XBold';
+    src: url('SVN-GilroyXBold.woff2') format('woff2'),
+        url('SVN-GilroyXBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XLight';
+    src: url('SVN-GilroyXLight.woff2') format('woff2'),
+        url('SVN-GilroyXLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy XBold';
+    src: url('SVN-GilroyXBoldItalic.woff2') format('woff2'),
+        url('SVN-GilroyXBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
