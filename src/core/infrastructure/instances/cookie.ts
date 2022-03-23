@@ -5,7 +5,10 @@ const cookieStorage = new CookieStorage()
 
 const appCookies: Cookie = {
   get: (key: string) => cookieStorage.getItem(key),
-  set: (key: string, value: string) => appCookies.set(key, value),
+  set: (key: string, value: string) => cookieStorage.setItem(key, value),
+  remove: (key: string) => cookieStorage.removeItem(key),
+  removeItems: (key: string[]) =>
+    key.forEach((e) => cookieStorage.removeItem(e)),
 }
 
 export default appCookies

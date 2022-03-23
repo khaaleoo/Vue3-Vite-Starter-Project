@@ -1,42 +1,32 @@
 import axios from 'axios'
 import { Http } from '../../domain/repositories/Http'
-import AuthService from '../../domain/services/Auth.service'
 import appCookies from './cookie'
 
 const headers = {
   'Content-Type': 'application/json',
 }
 
-const currentAxios = axios.create({
-  // baseURL: '',
-  // timeout: 1000,
+export const currentAxios = axios.create({
   headers,
 })
 
-axios.interceptors.request.use(
+currentAxios.interceptors.request.use(
   async (config: any) => {
-    const token = appCookies.get('sso_access_token')
-    const expiresIn = Number(appCookies.get('sso_expires_in'))
-    const isRefreshing = AuthService.isRefreshTokenPending(
-      localStorage.getItem('isRefreshTokenPending')
-    )
-    if (AuthService.needToRefreshToken(expiresIn) && !isRefreshing) {
-      //
-    }
+    const token = appCookies.get('sso_id_token')
     if (token) {
       config.headers.Authorization = token
     }
 
     return config
   },
-  (error) => {
+  (error: any) => {
     return Promise.reject(error)
   }
 )
 
-axios.interceptors.response.use(
-  (response) => response,
-  (error) => {
+currentAxios.interceptors.response.use(
+  (response: any) => response,
+  (error: any) => {
     const { status } = error.response
     if (status === 401) {
       console.error('unauthorized')
@@ -53,27 +43,34 @@ export const httpAxios: Http = {
     const response = await currentAxios.get(path, {
       ...config,
       params,
-      headers,
     })
     return response.data as T
   },
   post: async <T>(
     path: string,
-    params?: Record<string, any> | string,
+    params?: Record<string, any> | string | any[],
     config?: any
   ) => {
     const response = await currentAxios.post(
       path,
-      typeof params === 'string' ? params : { ...params },
-      { ...config, headers }
+      typeof params === 'string' || Array.isArray(params)
+        ? params
+        : { ...params },
+      { ...config }
     )
     return response.data as T
   },
-  put: async <T>(path: string, params?: Record<string, any>, config?: any) => {
+  put: async <T>(
+    path: string,
+    params?: Record<string, any> | string | any[],
+    config?: any
+  ) => {
     const response = await currentAxios.put(
       path,
-      { ...params },
-      { ...config, headers }
+      typeof params === 'string' || Array.isArray(params)
+        ? params
+        : { ...params },
+      { ...config }
     )
     return response.data as T
   },
@@ -81,7 +78,6 @@ export const httpAxios: Http = {
     const response = await currentAxios.delete(path, {
       ...config,
       params,
-      headers,
     })
     return response.data as T
   },

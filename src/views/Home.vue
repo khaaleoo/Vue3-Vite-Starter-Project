@@ -27,24 +27,15 @@
   </div>
 </template>
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { Switch } from '@headlessui/vue'
-import HelloWorld from '@/components/HelloWorld.vue'
-import { changeAntdTheme } from 'mini-dynamic-antd-theme'
-import { useStore } from 'vuex'
+  import { ref } from 'vue'
+  import { Switch } from '@headlessui/vue'
+  import HelloWorld from '@/components/HelloWorld.vue'
+  import { changeAntdTheme } from 'mini-dynamic-antd-theme'
 
-const point = ref(5)
-// await new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve()
-//   }, 3000)
-// })
-const store = useStore()
-console.log({ store })
-changeAntdTheme('purple')
-const checked = ref(false)
-const enabled = ref(true)
+  const point = ref(5)
+  changeAntdTheme('purple')
+  const checked = ref(false)
+  const enabled = ref(true)
 </script>
 
-<style lang="">
-</style>
+<style lang=""></style>
